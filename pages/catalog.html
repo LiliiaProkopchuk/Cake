@@ -5,26 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cake</title>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="fonts/style.css">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../fonts/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="../css/style.min.css">
 </head>
 <body>
 
     <header class="header lock-padding">
         <div class="header__container">
-            <a href="index.html" class="header__logo">Logo</a>
+            <a href="../index.html" class="header__logo">Logo</a>
             <div class="header__menu menu">
                 <div class="menu__icon">
                     <span></span>
                 </div>
                 <nav class="menu__body">
                     <ul class="menu__list">
-                        <li><a href="index.html" class="menu__link">Главная</a></li>
+                        <li><a href="../index.html" class="menu__link">Главная</a></li>
                         <li>
-                            <a href="_catalog.html" class="menu__link">Каталог</a>
+                            <a href="../pages/catalog.html" class="menu__link">Каталог</a>
                             <span class="menu__arrow"></span>
                             <ul class="menu__sub-list">
                                 <li>
@@ -38,7 +38,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li><a href="_delivery.html" class="menu__link">Доставка/Оплата</a></li>
+                        <li><a href="../pages/delivery.html" class="menu__link">Доставка/Оплата</a></li>
                         <li><a data-goto=".footer" href="#" class="menu__link">Контакты</a></li>
                     </ul>
                 </nav>
@@ -47,19 +47,32 @@
     </header>
 
     <main>
-        <section class="delivery">
+        <section class="about" id="about">
             <div class="container">
-                <h1>Доставка и оплата тортов</h1>
-                <p>Если Вы хотите заказать у нас праздничный торт, то необходимо предварительно созвониться и договориться о встрече. Дизайн, вес, состав торта и многи е другие вопросы обсуждаются лично при встрече.</p>
-                <p>Если Вы находитесь в другом городе или по другим причинам не имеете возможности лично встретиться с нами, то обсудить все вопросы относительно заказа можно по телефону. Аванс в таком случае можно перечислить на банковскую карту</p>
-                <img src="images/calendar.svg" alt="Calendar" class="calendar">
-                <p>Заказывать праздничный торт необходимо заблаговременно. Особенно если это свадебный , корпоративный торт или же торт, дизайн и размеры которого требуют изготовления специальных подставок или конструкций для него. Такие торты заказываются минимум за 1 месяц.</p>
-                <p>Минимальное время заказа других праздничных тортов минимум за 1 неделю.</p>
-                <img src="images/payment.svg" alt="payment" class="payment">
-                <p>При заказе торта необходимо внести предоплату. Предоплата является подтверждением Вашего заказа и составляет минимум 100 грн.</p>
-                <img src="images/truck.svg" alt="Truck" class="truck">
-                <p>Доставка Вашего заказа по городу или по области осуществляется при помощи услуг городского такси. В этом случае доставка оплачивается в оба конца.</p>
-                <p>В другие города доставка Вашего торта возможна лишь самовывозом.</p>
+                <h2 class="products__title _anim-items _anim-no-hide">Наша продукция</h2>
+                <div class="products__list">
+                    <a href="#" class="products__link">
+                            <picture>
+                                <source data-srcset="../images/wedding_cake-200.jpg" srcset="../images/1x1.png" media="(max-width: 1000px)">
+                                <img data-src="../images/wedding_cake.jpg" src="../images/1x1.png" alt="Wedding Cake">
+                            </picture>
+                        <div class="link__title">Свадебные торты</div>
+                    </a>
+                    <a href="#" class="products__link">
+                        <picture>
+                            <source data-srcset="../images/birthday_cake-200.jpg" srcset="../images/1x1.png" media="(max-width: 1000px)">
+                            <img data-src="../images/birthday_cake.jpg" src="../images/1x1.png" alt="Birthday Cake">
+                        </picture>
+                        <div class="link__title">Праздничные торты</div>
+                    </a>
+                    <a href="#" class="products__link">
+                        <picture>
+                            <source data-srcset="../images/candy_bar-200.jpg" srcset="../images/1x1.png" media="(max-width: 1000px)">
+                            <img data-src="../images/candy_bar.jpg" src="../images/1x1.png" alt="Candy Bar">
+                        </picture>
+                        <div class="link__title">Кенди бар</div>
+                    </a>
+                </div>
             </div>
         </section>
         <a class="btn scroll-top">
@@ -79,7 +92,7 @@
                     </ul>
                 </div>
                 <div class="footer__logo">
-                    <div class="logo__img"><a href="#">Logo</a></div>
+                    <div class="logo__img"><a href="../index.html">Logo</a></div>
                 </div>
                 <div class="footer__social">
                     <div class="social__links">
@@ -96,6 +109,6 @@
         </div>
     </footer>
     
-    <script src="js/main.min.js"></script>
+    <script src="../js/main.min.js"></script>
 </body>
 </html>
