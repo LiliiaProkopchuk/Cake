@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="fonts/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+    <header class="header lock-padding">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">Logo</a>
+            <div class="header__menu menu">
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+                <nav class="menu__body">
+                    <ul class="menu__list">
+                        <li><a href="index.html" class="menu__link">Главная</a></li>
+                        <li>
+                            <a href="#" class="menu__link">Каталог</a>
+                            <span class="menu__arrow"></span>
+                            <ul class="menu__sub-list">
+                                <li>
+                                    <a href="#" class="menu__sub-link">Свадебные торты</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="menu__sub-link">Праздничные торты</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="menu__sub-link">Кенди бар</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="_delivery.html" class="menu__link">Доставка/Оплата</a></li>
+                        <li><a data-goto=".footer" href="#" class="menu__link">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="products__title _anim-items _anim-no-hide">Наша продукция</h2>
+                <div class="products__list">
+                    <a href="#" class="products__link">
+                            <picture>
+                                <source data-srcset="images/wedding_cake-200.jpg" srcset="images/1x1.png" media="(max-width: 1000px)">
+                                <img data-src="images/wedding_cake.jpg" src="images/1x1.png" alt="Wedding Cake">
+                            </picture>
+                        <div class="link__title">Свадебные торты</div>
+                    </a>
+                    <a href="#" class="products__link">
+                        <picture>
+                            <source data-srcset="images/birthday_cake-200.jpg" srcset="images/1x1.png" media="(max-width: 1000px)">
+                            <img data-src="images/birthday_cake.jpg" src="images/1x1.png" alt="Birthday Cake">
+                        </picture>
+                        <div class="link__title">Праздничные торты</div>
+                    </a>
+                    <a href="#" class="products__link">
+                        <picture>
+                            <source data-srcset="images/candy_bar-200.jpg" srcset="images/1x1.png" media="(max-width: 1000px)">
+                            <img data-src="images/candy_bar.jpg" src="images/1x1.png" alt="Candy Bar">
+                        </picture>
+                        <div class="link__title">Кенди бар</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <a class="btn scroll-top">
+            <span class="icon-arrow-up"></span>
+        </a>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__box">
+                <div class="footer__nav">
+                    <ul class="footer__nav-box">
+                        <li><a data-goto=".about" href="#" class="footer__nav-item menu__link">О нас</a></li>
+                        <li><a href="#" class="footer__nav-item menu__link">Каталог</a></li>
+                        <li><a href="#" class="footer__nav-item menu__link">Доставка/Оплата</a></li>
+                        <li><a data-goto=".questions" href="#" class="footer__nav-item menu__link">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer__logo">
+                    <div class="logo__img"><a href="#">Logo</a></div>
+                </div>
+                <div class="footer__social">
+                    <div class="social__links">
+                        <ul class="social__list _anim-items _anim-no-hide">
+                          <li><a href="https://www.facebook.com/" target="_blank"><span class="icon-facebook"></span></a></li>
+                          <li><a href="https://www.youtube.com/" target="_blank"><span class="icon-youtube"></span></a></li>
+                          <li><a href="https://www.instagram.com/" target="_blank"><span class="icon-instagram"></span></a></li>
+                        </ul>
+                      </div>
+                    <div class="social__phone"><a href="tel:+380442855264" > (044) 285 52 64</a></div>
+                </div>
+            </div>
+            <div class="footer__copy">&copy; 2021 Gloria Flowers Decor Studio Все права защищены</div>
+        </div>
+    </footer>
+    
+    <script src="js/main.min.js"></script>
+</body>
+</html>

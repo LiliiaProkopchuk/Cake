@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="fonts/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+    <header class="header lock-padding">
+        <div class="header__container">
+            <a href="#" class="header__logo">Logo</a>
+            <div class="header__menu menu">
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+                <nav class="menu__body">
+                    <ul class="menu__list">
+                        <li><a data-goto=".fullscrine" href="#" class="menu__link">Главная</a></li>
+                        <li><a data-goto=".about" href="#" class="menu__link">О нас</a></li>
+                        <li>
+                            <a href="_catalog.html" class="menu__link">Каталог</a>
+                            <span class="menu__arrow"></span>
+                            <ul class="menu__sub-list">
+                                <li>
+                                    <a href="#" class="menu__sub-link">Свадебные торты</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="menu__sub-link">Праздничные торты</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="menu__sub-link">Кенди бар</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="_delivery.html" class="menu__link">Доставка/Оплата</a></li>
+                        <li><a data-goto=".questions" href="#" class="menu__link">FAQ</a></li>
+                        <li><a data-goto=".footer" href="#" class="menu__link">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="fullscrine">
+            <div class="container">
+                <div class="fullscrine__string">
+                    <div class="fullscrine__box">
+                        <h1 class="fullscrine__title _anim-items _anim-no-hide">Торты на заказ</h1>
+                        <div class="fullscrine__text _anim-items _anim-no-hide">Лучшие торты ручной работы из натуральных ингридиентов на заказ в Николаеве</div>
+                        <a href="#popup" class="btn btn__order popup-link _anim-items _anim-no-hide">Быстрый заказ торта</a>
+                    </div>
+                    <div class="fullscrine__img">
+                        <img src="images/bg_main.jpg" alt="">
+                    </div>
+                </div>
+                <div class="scrollDown">
+                    <a href="#about"><span></span><span></span></a>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about__box">
+                    <div class="about__img">
+                        <img data-src="images/about_img.jpg" src="images/1x1.png" alt="Owner">
+                    </div>
+                    <div class="about__info">
+                        <h2 class="about__title _anim-items _anim-no-hide">О нас</h2>
+                        <h3 class="about__sub-title _anim-items _anim-no-hide">Немного о нашей кондитерской</h3>
+                        <div class="about__text">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem deleniti iusto soluta provident facilis earum sapiente distinctio est maiores? Quia, deserunt quis. Nihil suscipit similique debitis provident, cupiditate fugiat velit?</p>
+                            <p>Dignissimos labore aliquid cupiditate exercitationem. Pariatur tempore nesciunt vel quia officiis explicabo fuga deleniti odio reprehenderit ratione commodi, sit id soluta, amet aperiam sunt animi optio at expedita sint quod?</p>
+                            <p>Molestiae laboriosam accusamus perferendis animi ullam! Iste ipsum saepe, beatae illum quos tenetur dicta aliquid excepturi odio suscipit autem id totam odit corrupti deleniti quis nulla magni consectetur, corporis soluta.</p>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="products__title _anim-items _anim-no-hide">Наша продукция</h2>
+                <div class="products__list">
+                    <a href="#" class="products__link">
+                            <picture>
+                                <source data-srcset="images/wedding_cake-200.jpg" srcset="images/1x1.png" media="(max-width: 1000px)">
+                                <img data-src="images/wedding_cake.jpg" src="images/1x1.png" alt="Wedding Cake">
+                            </picture>
+                        <div class="link__title">Свадебные торты</div>
+                    </a>
+                    <a href="#" class="products__link">
+                        <picture>
+                            <source data-srcset="images/birthday_cake-200.jpg" srcset="images/1x1.png" media="(max-width: 1000px)">
+                            <img data-src="images/birthday_cake.jpg" src="images/1x1.png" alt="Birthday Cake">
+                        </picture>
+                        <div class="link__title">Праздничные торты</div>
+                    </a>
+                    <a href="#" class="products__link">
+                        <picture>
+                            <source data-srcset="images/candy_bar-200.jpg" srcset="images/1x1.png" media="(max-width: 1000px)">
+                            <img data-src="images/candy_bar.jpg" src="images/1x1.png" alt="Candy Bar">
+                        </picture>
+                        <div class="link__title">Кенди бар</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="benefits">
+            <div class="container">
+                <h2 class="benefits__title">Преимущества</h2>
+                <h3 class="benefits__sub-title">Почему вы должны выбрать нас</h3>
+                <ul class="benefits__list _anim-items _anim-no-hide">
+                    <li class="benefits__link">Только натуральные ингредиенты</li>
+                    <li class="benefits__link">Создадим для вас торт любой формы и сложности</li>
+                    <li class="benefits__link">Индивидуальный подход к каждому заказчику</li>
+                    <li class="benefits__link">Состав торта зависит от предпочтений заказчика</li>
+                </ul>
+            </div>
+        </section>
+        <section class="questions">
+            <div class="container">
+                <h2 class="questions__title _anim-items _anim-no-hide">Часто задаваемые вопросы</h2>
+                <div class="questions__block one">
+                    <div class="block__item">
+                        <div class="block__title">Как сделать заказ?</div>
+                        <div class="block__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias odit debitis ad possimus veritatis adipisci velit vero incidunt temporibus dolorem, suscipit, magni eveniet consequatur maiores molestias illo odio in neque.</div>
+                    </div>
+                    <div class="block__item">
+                        <div class="block__title">Сколько стоят ваши торты?</div>
+                        <div class="block__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias odit debitis ad possimus veritatis adipisci velit vero incidunt temporibus dolorem, suscipit, magni eveniet consequatur maiores molestias illo odio in neque.</div>
+                    </div>
+                    <div class="block__item">
+                        <div class="block__title">Берете ли вы предоплату?</div>
+                        <div class="block__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias odit debitis ad possimus veritatis adipisci velit vero incidunt temporibus dolorem, suscipit, magni eveniet consequatur maiores molestias illo odio in neque.</div>
+                    </div>
+                    <div class="block__item">
+                        <div class="block__title">Делаете ли вы доставку?</div>
+                        <div class="block__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias odit debitis ad possimus veritatis adipisci velit vero incidunt temporibus dolorem, suscipit, magni eveniet consequatur maiores molestias illo odio in neque.</div>
+                    </div>
+                    <div class="block__item">
+                        <div class="block__title">Изготовите ли вы торт по моему дизайну?</div>
+                        <div class="block__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias odit debitis ad possimus veritatis adipisci velit vero incidunt temporibus dolorem, suscipit, magni eveniet consequatur maiores molestias illo odio in neque.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a class="btn scroll-top">
+            <span class="icon-arrow-up"></span>
+        </a>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__box">
+                <div class="footer__nav">
+                    <ul class="footer__nav-box">
+                        <li><a data-goto=".about" href="#" class="footer__nav-item menu__link">О нас</a></li>
+                        <li><a href="#" class="footer__nav-item menu__link">Каталог</a></li>
+                        <li><a href="#" class="footer__nav-item menu__link">Доставка/Оплата</a></li>
+                        <li><a data-goto=".questions" href="#" class="footer__nav-item menu__link">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer__logo">
+                    <div class="logo__img"><a href="#">Logo</a></div>
+                </div>
+                <div class="footer__social">
+                    <div class="social__links">
+                        <ul class="social__list _anim-items _anim-no-hide">
+                          <li><a href="https://www.facebook.com/" target="_blank"><span class="icon-facebook"></span></a></li>
+                          <li><a href="https://www.youtube.com/" target="_blank"><span class="icon-youtube"></span></a></li>
+                          <li><a href="https://www.instagram.com/" target="_blank"><span class="icon-instagram"></span></a></li>
+                        </ul>
+                      </div>
+                    <div class="social__phone"><a href="tel:+380442855264" > (044) 285 52 64</a></div>
+                </div>
+            </div>
+            <div class="footer__copy">&copy; 2021 Gloria Flowers Decor Studio Все права защищены</div>
+        </div>
+    </footer>
+
+    <div class="popup" id="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close close-popup"><span class="icon-close"></span></a>
+                <h2 class="popup__title">Быстрый заказ</h2>
+                <form action="" method="POST" class="popup__form">
+                    <input type="text" name="name" placeholder="Ваше имя">
+                    <input type="tel" name="phone" placeholder="Номер телефона">
+                    <textarea name="text" placeholder="Дополнительная информация (если необходимо)"></textarea>
+                    <button class="popup__btn" type="submit">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/main.min.js"></script>
+</body>
+</html>
